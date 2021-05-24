@@ -5,12 +5,27 @@
 
 // container.appendChild(element);
 
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-const element = <h1>Hello, Platzi Badges!</h1>;
+import Badge from './components/Badge'
 
-const container = document.getElementById('app');
+// const jsx = <h1>Hello, Platzi Badges from React!</h1>;
+// const element = React.createElement(
+//   "a",
+//   { href: "https://platzi.com" },
+//   "Hola soy los children"
+// );
+// const name = 'Daniela'
+// const jsx = <h1>Hola soy, {null}</h1>
+// const element = React.createElement(
+//     'h1',
+//     {},
+//     `Hola, soy ${name}`
+// )
+
+
+const container = document.getElementById("app");
 
 // ReactDOM.render(__qué__, __dónde__);
-ReactDOM.render(element, container);
+ReactDOM.render(<Badge/>, container);
